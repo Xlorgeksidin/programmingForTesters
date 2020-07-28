@@ -1,6 +1,6 @@
-NewClass.java
- NewClass
 Point.java
  Point
+NewClass.java
+ NewClass
 TestDistance.java
  TestDistance
