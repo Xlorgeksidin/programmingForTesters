@@ -1,4 +1,8 @@
 ru/stqa/pft/addressbook/GroupData.java
  ru.stqa.pft.addressbook.GroupData
+ru/stqa/pft/addressbook/TestBase.java
+ ru.stqa.pft.addressbook.TestBase
+ru/stqa/pft/addressbook/GroupDeletionTest.java
+ ru.stqa.pft.addressbook.GroupDeletionTest
 ru/stqa/pft/addressbook/GroupCreationTest.java
  ru.stqa.pft.addressbook.GroupCreationTest
