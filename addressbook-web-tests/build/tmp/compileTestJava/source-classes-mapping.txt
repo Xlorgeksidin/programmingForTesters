@@ -1,8 +1,20 @@
-ru/stqa/pft/addressbook/GroupData.java
- ru.stqa.pft.addressbook.GroupData
-ru/stqa/pft/addressbook/TestBase.java
- ru.stqa.pft.addressbook.TestBase
-ru/stqa/pft/addressbook/GroupDeletionTest.java
- ru.stqa.pft.addressbook.GroupDeletionTest
-ru/stqa/pft/addressbook/GroupCreationTest.java
- ru.stqa.pft.addressbook.GroupCreationTest
+ru/stqa/pft/addressbook/appmanager/GroupHelper.java
+ ru.stqa.pft.addressbook.appmanager.GroupHelper
+ru/stqa/pft/addressbook/appmanager/SessionHelper.java
+ ru.stqa.pft.addressbook.appmanager.SessionHelper
+ru/stqa/pft/addressbook/tests/GroupCreationTest.java
+ ru.stqa.pft.addressbook.tests.GroupCreationTest
+ru/stqa/pft/addressbook/tests/TestBase.java
+ ru.stqa.pft.addressbook.tests.TestBase
+ru/stqa/pft/addressbook/tests/GroupDeletionTest.java
+ ru.stqa.pft.addressbook.tests.GroupDeletionTest
+ru/stqa/pft/addressbook/tests/GroupModificationTest.java
+ ru.stqa.pft.addressbook.tests.GroupModificationTest
+ru/stqa/pft/addressbook/appmanager/HelperBase.java
+ ru.stqa.pft.addressbook.appmanager.HelperBase
+ru/stqa/pft/addressbook/model/GroupData.java
+ ru.stqa.pft.addressbook.model.GroupData
+ru/stqa/pft/addressbook/appmanager/NavigationHelper.java
+ ru.stqa.pft.addressbook.appmanager.NavigationHelper
+ru/stqa/pft/addressbook/appmanager/ApplicationManager.java
+ ru.stqa.pft.addressbook.appmanager.ApplicationManager
