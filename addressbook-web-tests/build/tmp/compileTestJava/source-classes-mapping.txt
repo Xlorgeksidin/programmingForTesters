@@ -22,6 +22,8 @@ ru/stqa/pft/addressbook/appmanager/ContactHelper.java
  ru.stqa.pft.addressbook.appmanager.ContactHelper
 ru/stqa/pft/addressbook/tests/GroupModificationTest.java
  ru.stqa.pft.addressbook.tests.GroupModificationTest
+ru/stqa/pft/addressbook/tests/ContactDeletionTest.java
+ ru.stqa.pft.addressbook.tests.ContactDeletionTest
 ru/stqa/pft/addressbook/tests/ContactCreationTest.java
  ru.stqa.pft.addressbook.tests.ContactCreationTest
 ru/stqa/pft/addressbook/appmanager/ApplicationManager.java

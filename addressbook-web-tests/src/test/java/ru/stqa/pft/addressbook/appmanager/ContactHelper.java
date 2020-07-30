@@ -81,4 +81,16 @@ public class ContactHelper extends HelperBase{
   public void initContactModification() {
     click(By.xpath("//*[@id=\"maintable\"]/tbody/tr[3]/td[8]/a/img"));
   }
+
+  public void selectContact() {
+    click(By.xpath("(//*[@type='checkbox'])[1]"));
+  }
+
+  public void deleteSelectedContacts() {
+    click(By.xpath("//input[@value='Delete']"));
+  }
+
+  public void confirmDeletionContact() {
+    wd.switchTo().alert().accept();
+  }
 }
