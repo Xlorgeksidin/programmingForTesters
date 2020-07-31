@@ -58,11 +58,11 @@ public class ContactHelper extends HelperBase{
   }
 
   public void initContactModification() {
-    click(By.xpath("//*[@id=\"maintable\"]/tbody/tr[3]/td[8]/a/img"));
+    click(By.xpath("(//*[@id=\"maintable\"]/tbody//*[@alt='Edit'])[1]"));
   }
 
   public void selectContact() {
-    click(By.xpath("(//*[@type='checkbox'])[1]"));
+    click(By.xpath("(//*[@name='selected[]'])[1]"));
   }
 
   public void deleteSelectedContacts() {
@@ -71,5 +71,21 @@ public class ContactHelper extends HelperBase{
 
   public void confirmDeletionContact() {
     wd.switchTo().alert().accept();
+  }
+
+  public void gotoCreateNewContact(){
+
+    click(By.linkText("add new"));
+  }
+
+  public void createContact(ContactData contactData) {
+    gotoCreateNewContact();
+    fillContactForm(true, contactData);
+    submitContactCreation();
+    returnToHomePage();
+  }
+
+  public boolean isThereAContact() {
+    return isElementPresent(By.xpath("(//*[@name='selected[]'])[1]"));
   }
 }
