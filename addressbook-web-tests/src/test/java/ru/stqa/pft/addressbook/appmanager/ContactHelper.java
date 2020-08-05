@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
-import ru.stqa.pft.addressbook.model.GroupData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,8 +65,8 @@ public class ContactHelper extends HelperBase{
     click(By.xpath("(//*[@id=\"maintable\"]/tbody//*[@alt='Edit'])[1]"));
   }
 
-  public void selectContact() {
-    click(By.xpath("(//*[@name='selected[]'])[1]"));
+  public void selectContact(int index) {
+    wd.findElements(By.xpath("//*[@name='selected[]']")).get(index).click();
   }
 
   public void deleteSelectedContacts() {
