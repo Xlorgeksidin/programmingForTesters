@@ -2,98 +2,169 @@ package ru.stqa.pft.addressbook.model;
 
 public class ContactData {
 
-  private int id;
-  private final String firstName;
-  private final String middleName;
-  private final String lastName;
-  private final String nickname;
-  private final String title;
-  private final String company;
-  private final String homeTelephone;
-  private final String mobileTelephone;
-  private final String workTelephone;
-  private final String faxTelephone;
-  private final String email;
-  private final String email2;
-  private final String email3;
-  private final String homepage;
-  private final String dayOfBirth;
-  private final String monthOfBirth;
-  private final String yearOfBirth;
-  private final String dayOfAnniversary;
-  private final String monthOfAnniversary;
-  private final String yearOfAnniversary;
-  private final String groupName;
-  private final String address2;
-  private final String phone2;
-  private final String notes;
-  private final String address;
+  private int id = Integer.MAX_VALUE;
+  private  String firstName;
+  private  String middleName;
+  private  String lastName;
+  private  String nickname;
+  private  String title;
+  private  String company;
+  private  String homeTelephone;
+  private  String mobileTelephone;
+  private  String workTelephone;
+  private  String faxTelephone;
+  private  String email;
+  private  String email2;
+  private  String email3;
+  private  String homepage;
+  private  String dayOfBirth;
+  private  String monthOfBirth;
+  private  String yearOfBirth;
+  private  String dayOfAnniversary;
+  private  String monthOfAnniversary;
+  private  String yearOfAnniversary;
+  private  String groupName;
+  private  String address2;
+  private  String phone2;
+  private  String notes;
+  private  String address;
 
-  public ContactData(String firstName, String middleName, String lastName, String nickname, String title, String company, String address, String homeTelephone, String mobileTelephone, String workTelephone, String faxTelephone, String email, String email2, String email3, String homepage, String dayOfBirth, String monthOfBirth, String yearOfBirth, String dayOfAnniversary, String monthOfAnniversary, String yearOfAnniversary, String groupName, String address2, String phone2, String notes) {
-    this.id = Integer.MAX_VALUE;
-    this.address = address;
+
+
+  public ContactData withFirstName(String firstName) {
     this.firstName = firstName;
-    this.middleName = middleName;
-    this.lastName = lastName;
-    this.nickname = nickname;
-    this.title = title;
-    this.company = company;
-    this.homeTelephone = homeTelephone;
-    this.mobileTelephone = mobileTelephone;
-    this.workTelephone = workTelephone;
-    this.faxTelephone = faxTelephone;
-    this.email = email;
-    this.email2 = email2;
-    this.email3 = email3;
-    this.homepage = homepage;
-    this.dayOfBirth = dayOfBirth;
-    this.monthOfBirth = monthOfBirth;
-    this.yearOfBirth = yearOfBirth;
-    this.dayOfAnniversary = dayOfAnniversary;
-    this.monthOfAnniversary = monthOfAnniversary;
-    this.yearOfAnniversary = yearOfAnniversary;
-    this.groupName = groupName;
-    this.address2 = address2;
-    this.phone2 = phone2;
-    this.notes = notes;
+    return this;
   }
-  public ContactData(int id, String firstName, String middleName, String lastName, String nickname, String title, String company, String address, String homeTelephone, String mobileTelephone, String workTelephone, String faxTelephone, String email, String email2, String email3, String homepage, String dayOfBirth, String monthOfBirth, String yearOfBirth, String dayOfAnniversary, String monthOfAnniversary, String yearOfAnniversary, String groupName, String address2, String phone2, String notes) {
+
+  public ContactData withMiddleName(String middleName) {
+    this.middleName = middleName;
+    return this;
+  }
+
+  public ContactData withLastName(String lastName) {
+    this.lastName = lastName;
+    return this;
+  }
+
+  public ContactData withNickname(String nickname) {
+    this.nickname = nickname;
+    return this;
+  }
+
+  public ContactData withTitle(String title) {
+    this.title = title;
+    return this;
+  }
+
+  public ContactData withCompany(String company) {
+    this.company = company;
+    return this;
+  }
+
+  public ContactData withHomeTelephone(String homeTelephone) {
+    this.homeTelephone = homeTelephone;
+    return this;
+  }
+
+  public ContactData withMobileTelephone(String mobileTelephone) {
+    this.mobileTelephone = mobileTelephone;
+    return this;
+  }
+
+  public ContactData withWorkTelephone(String workTelephone) {
+    this.workTelephone = workTelephone;
+    return this;
+  }
+
+  public ContactData withFaxTelephone(String faxTelephone) {
+    this.faxTelephone = faxTelephone;
+    return this;
+  }
+
+  public ContactData withEmail(String email) {
+    this.email = email;
+    return this;
+  }
+
+  public ContactData withEmail2(String email2) {
+    this.email2 = email2;
+    return this;
+  }
+
+  public ContactData withEmail3(String email3) {
+    this.email3 = email3;
+    return this;
+  }
+
+  public ContactData withHomepage(String homepage) {
+    this.homepage = homepage;
+    return this;
+  }
+
+  public ContactData withDayOfBirth(String dayOfBirth) {
+    this.dayOfBirth = dayOfBirth;
+    return this;
+  }
+
+  public ContactData withMonthOfBirth(String monthOfBirth) {
+    this.monthOfBirth = monthOfBirth;
+    return this;
+  }
+
+  public ContactData withYearOfBirth(String yearOfBirth) {
+    this.yearOfBirth = yearOfBirth;
+    return this;
+  }
+
+  public ContactData withDayOfAnniversary(String dayOfAnniversary) {
+    this.dayOfAnniversary = dayOfAnniversary;
+    return this;
+  }
+
+  public ContactData withMonthOfAnniversary(String monthOfAnniversary) {
+    this.monthOfAnniversary = monthOfAnniversary;
+    return this;
+  }
+
+  public ContactData withYearOfAnniversary(String yearOfAnniversary) {
+    this.yearOfAnniversary = yearOfAnniversary;
+    return this;
+  }
+
+  public ContactData withGroupName(String groupName) {
+    this.groupName = groupName;
+    return this;
+  }
+
+  public ContactData withAddress2(String address2) {
+    this.address2 = address2;
+    return this;
+  }
+
+  public ContactData withPhone2(String phone2) {
+    this.phone2 = phone2;
+    return this;
+  }
+
+  public ContactData withNotes(String notes) {
+    this.notes = notes;
+    return this;
+  }
+
+  public ContactData withAddress(String address) {
+    this.address = address;
+    return this;
+  }
+
+  public ContactData withId(int id) {
     this.id = id;
-    this.address = address;
-    this.firstName = firstName;
-    this.middleName = middleName;
-    this.lastName = lastName;
-    this.nickname = nickname;
-    this.title = title;
-    this.company = company;
-    this.homeTelephone = homeTelephone;
-    this.mobileTelephone = mobileTelephone;
-    this.workTelephone = workTelephone;
-    this.faxTelephone = faxTelephone;
-    this.email = email;
-    this.email2 = email2;
-    this.email3 = email3;
-    this.homepage = homepage;
-    this.dayOfBirth = dayOfBirth;
-    this.monthOfBirth = monthOfBirth;
-    this.yearOfBirth = yearOfBirth;
-    this.dayOfAnniversary = dayOfAnniversary;
-    this.monthOfAnniversary = monthOfAnniversary;
-    this.yearOfAnniversary = yearOfAnniversary;
-    this.groupName = groupName;
-    this.address2 = address2;
-    this.phone2 = phone2;
-    this.notes = notes;
+    return this;
   }
+
+
 
   public int getId() {
     return id;
-  }
-
-
-
-  public void setId(int id) {
-    this.id = id;
   }
 
   public String getFirstName() {

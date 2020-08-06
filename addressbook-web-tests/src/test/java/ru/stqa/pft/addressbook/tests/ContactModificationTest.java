@@ -14,7 +14,30 @@ public class ContactModificationTest extends TestBase{
   public void ensurePreconditions(){
     app.goTo().homePage();
     if(app.contact().list().size() == 0){
-      app.contact().create(new ContactData("firstName", "MiddleName", "LastName", "nickname", "title", "company", "address","home", "mobile", "work", "fax", "email", "email2", "email3", "homepage", "1", "January", "2001", "6", "August", "1993", "edit1", "address2", "phone2", "notes"));
+      app.contact().create(new ContactData().withFirstName("firstName").withMiddleName("MiddleName")
+              .withLastName("LastName")
+              .withNickname("nickname")
+              .withTitle("title")
+              .withCompany("company")
+              .withAddress("address")
+              .withHomeTelephone("home")
+              .withMobileTelephone("mobile")
+              .withWorkTelephone("work")
+              .withFaxTelephone("fax")
+              .withEmail("email")
+              .withEmail2("email2")
+              .withEmail3("email3")
+              .withHomepage("homepage")
+              .withDayOfBirth("1")
+              .withMonthOfBirth("January")
+              .withYearOfBirth("2001")
+              .withDayOfAnniversary("6")
+              .withMonthOfAnniversary("August")
+              .withYearOfAnniversary("1993")
+              .withGroupName("edit1")
+              .withAddress2("address2")
+              .withPhone2("phone2")
+              .withNotes("notes"));
     }
   }
 
@@ -24,7 +47,30 @@ public class ContactModificationTest extends TestBase{
 
     List<ContactData> before = app.contact().list();
     int index = before.size() - 1;
-    ContactData contact = new ContactData(before.get(index).getId(),"firstName", "MiddleName", "LastName", "nickname", "title", "company", "address","home", "mobile", "work", "fax", "email", "email2", "email3", "homepage", "1", "January", "2001", "6", "August", "1993", "edit1", "address2", "phone2", "notes");
+    ContactData contact = new ContactData().withId(before.get(index).getId()).withFirstName("firstName").withMiddleName("MiddleName")
+            .withLastName("LastName")
+            .withNickname("nickname")
+            .withTitle("title")
+            .withCompany("company")
+            .withAddress("address")
+            .withHomeTelephone("home")
+            .withMobileTelephone("mobile")
+            .withWorkTelephone("work")
+            .withFaxTelephone("fax")
+            .withEmail("email")
+            .withEmail2("email2")
+            .withEmail3("email3")
+            .withHomepage("homepage")
+            .withDayOfBirth("1")
+            .withMonthOfBirth("January")
+            .withYearOfBirth("2001")
+            .withDayOfAnniversary("6")
+            .withMonthOfAnniversary("August")
+            .withYearOfAnniversary("1993")
+            .withGroupName("edit1")
+            .withAddress2("address2")
+            .withPhone2("phone2")
+            .withNotes("notes");
     app.contact().modify(index, contact);
     List<ContactData> after = app.contact().list();
     Assert.assertEquals(after.size(), before.size());
