@@ -82,14 +82,14 @@ public class ContactHelper extends HelperBase{
     click(By.linkText("add new"));
   }
 
-  public void createContact(ContactData contactData) {
+  public void create(ContactData contactData) {
     gotoCreateNewContact();
     fillContactForm(true, contactData);
     submitContactCreation();
     returnToHomePage();
   }
 
-  public void modifyContact(int indexContact, ContactData contact) {
+  public void modify(int indexContact, ContactData contact) {
     selectContact(indexContact);
     initContactModification();
     fillContactForm(false, contact);
@@ -97,11 +97,18 @@ public class ContactHelper extends HelperBase{
     returnToHomePage();
   }
 
+  public void delete(int index) {
+    selectContact(index);
+    deleteSelectedContacts();
+    confirmDeletionContact();
+    returnToHomePage();
+  }
+
   public boolean isThereAContact() {
     return isElementPresent(By.xpath("(//*[@name='selected[]'])[1]"));
   }
 
-  public List<ContactData> getContactList() {
+  public List<ContactData> list() {
     List<ContactData> contacts = new ArrayList<ContactData>();
     List<WebElement> elements = wd.findElements(By.xpath("//tr[@name='entry']"));
     for(WebElement element: elements){
