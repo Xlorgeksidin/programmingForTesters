@@ -91,6 +91,7 @@ public class ContactHelper extends HelperBase{
     gotoCreateNewContact();
     fillContactForm(true, contactData);
     submitContactCreation();
+    contactCache = null;
     returnToHomePage();
   }
 
@@ -99,6 +100,7 @@ public class ContactHelper extends HelperBase{
     initContactModification();
     fillContactForm(false, contact);
     submitContactModification();
+    contactCache = null;
     returnToHomePage();
   }
 
@@ -107,12 +109,14 @@ public class ContactHelper extends HelperBase{
     initContactModification();
     fillContactForm(false, contact);
     submitContactModification();
+    contactCache = null;
     returnToHomePage();
   }
 
   public void delete(int index) {
     selectContact(index);
     deleteSelectedContacts();
+    contactCache = null;
     confirmDeletionContact();
     click(By.linkText("home"));
   }
@@ -120,6 +124,7 @@ public class ContactHelper extends HelperBase{
   public void delete(ContactData contact) {
     selectContactById(contact.getId());
     deleteSelectedContacts();
+    contactCache = null;
     confirmDeletionContact();
     click(By.linkText("home"));
   }
@@ -142,8 +147,14 @@ public class ContactHelper extends HelperBase{
     return contacts;
   }
 
+  private Contacts contactCache = null;
+
   public Contacts all() {
-    Contacts contacts = new Contacts();
+    if(contactCache != null){
+      return new Contacts(contactCache);
+    }
+
+    contactCache = new Contacts();
     List<WebElement> elements = wd.findElements(By.xpath("//tr[@name='entry']"));
     for(WebElement element: elements){
       List<WebElement> row = element.findElements(By.tagName("td"));
@@ -151,9 +162,9 @@ public class ContactHelper extends HelperBase{
       String firstName = row.get(2).getText();
       int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
       ContactData contact = new ContactData().withId(id).withFirstName(firstName).withLastName(lastName);
-      contacts.add(contact);
+      contactCache.add(contact);
     }
-    return contacts;
+    return new Contacts(contactCache);
   }
 
 
