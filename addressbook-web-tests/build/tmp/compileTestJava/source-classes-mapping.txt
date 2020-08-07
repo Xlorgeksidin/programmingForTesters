@@ -32,3 +32,5 @@ ru/stqa/pft/addressbook/tests/ContactCreationTest.java
  ru.stqa.pft.addressbook.tests.ContactCreationTest
 ru/stqa/pft/addressbook/appmanager/ApplicationManager.java
  ru.stqa.pft.addressbook.appmanager.ApplicationManager
+ru/stqa/pft/addressbook/tests/ContactPhoneTests.java
+ ru.stqa.pft.addressbook.tests.ContactPhoneTests
