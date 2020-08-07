@@ -28,8 +28,8 @@ public class GroupModificationTest extends TestBase {
             .withHeader("headerTest1")
             .withFooter("Footer1");
     app.group().modify(editGroup);
+    assertThat(app.group().count(), equalTo(before.size()));
     Groups after = app.group().all();
-    Assert.assertEquals(after.size(), before.size());
     assertThat(after, equalTo(before.without(modifiedGroup).withAdded(editGroup)));
   }
 
