@@ -38,3 +38,5 @@ ru/stqa/pft/addressbook/model/ContactData.java
  ru.stqa.pft.addressbook.model.ContactData
 ru/stqa/pft/addressbook/tests/ContactCreationTest.java
  ru.stqa.pft.addressbook.tests.ContactCreationTest
+ru/stqa/pft/addressbook/generators/GroupDataGenerator.java
+ ru.stqa.pft.addressbook.generators.GroupDataGenerator
