@@ -30,13 +30,13 @@ ru/stqa/pft/addressbook/tests/ContactAddressTests.java
  ru.stqa.pft.addressbook.tests.ContactAddressTests
 ru/stqa/pft/addressbook/appmanager/NavigationHelper.java
  ru.stqa.pft.addressbook.appmanager.NavigationHelper
-ru/stqa/pft/addressbook/tests/ContactPhoneTests.java
- ru.stqa.pft.addressbook.tests.ContactPhoneTests
+ru/stqa/pft/addressbook/generators/GroupDataGenerator.java
+ ru.stqa.pft.addressbook.generators.GroupDataGenerator
+ru/stqa/pft/addressbook/tests/ContactCreationTest.java
+ ru.stqa.pft.addressbook.tests.ContactCreationTest
 ru/stqa/pft/addressbook/appmanager/ApplicationManager.java
  ru.stqa.pft.addressbook.appmanager.ApplicationManager
 ru/stqa/pft/addressbook/model/ContactData.java
  ru.stqa.pft.addressbook.model.ContactData
-ru/stqa/pft/addressbook/tests/ContactCreationTest.java
- ru.stqa.pft.addressbook.tests.ContactCreationTest
-ru/stqa/pft/addressbook/generators/GroupDataGenerator.java
- ru.stqa.pft.addressbook.generators.GroupDataGenerator
+ru/stqa/pft/addressbook/tests/ContactPhoneTests.java
+ ru.stqa.pft.addressbook.tests.ContactPhoneTests
