@@ -207,4 +207,5 @@ public class ContactHelper extends HelperBase{
   private void initContactModificationById(int id) {
     click(By.xpath("//a[@href=\"edit.php?id=" + id + "\"]"));
   }
+
 }
