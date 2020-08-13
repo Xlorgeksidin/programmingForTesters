@@ -25,33 +25,35 @@ public class ContactCreationTest extends TestBase{
   @DataProvider
   public Iterator<Object[]> validContactsFromXml() throws IOException {
 
-    BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.xml")));
-    String xml = "";
-    String line = reader.readLine();
-    while(line != null){
-      xml += line;
-      line = reader.readLine();
+    try(BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.xml")))) {
+      String xml = "";
+      String line = reader.readLine();
+      while (line != null) {
+        xml += line;
+        line = reader.readLine();
+      }
+      XStream xStream = new XStream();
+      xStream.processAnnotations(ContactData.class);
+      List<ContactData> contacts = (List<ContactData>) xStream.fromXML(xml);
+      return contacts.stream().map((c) -> new Object[]{c}).collect(Collectors.toList()).iterator();
     }
-    XStream xStream = new XStream();
-    xStream.processAnnotations(ContactData.class);
-    List<ContactData> contacts = (List<ContactData>) xStream.fromXML(xml);
-    return contacts.stream().map((c) -> new Object[] {c}).collect(Collectors.toList()).iterator();
-
   }
 
   @DataProvider
   public Iterator<Object[]> validContactsFromJson() throws IOException{
 
-    BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/groups.json")));
-    String json = "";
-    String line = reader.readLine();
-    while(line != null){
-      json += line;
-      line = reader.readLine();
+    try(BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/groups.json")))) {
+      String json = "";
+      String line = reader.readLine();
+      while(line != null){
+        json += line;
+        line = reader.readLine();
+      }
+      Gson gson = new Gson();
+      List<ContactData> groups = gson.fromJson(json, new TypeToken<List<ContactData>>(){}.getType()); //это то же самое как List<GroupData>.class - получение класса дженерика
+      return groups.stream().map((g) -> new Object[] {g}).collect(Collectors.toList()).iterator();
     }
-    Gson gson = new Gson();
-    List<ContactData> groups = gson.fromJson(json, new TypeToken<List<ContactData>>(){}.getType()); //это то же самое как List<GroupData>.class - получение класса дженерика
-    return groups.stream().map((g) -> new Object[] {g}).collect(Collectors.toList()).iterator();
+
 
   }
 
