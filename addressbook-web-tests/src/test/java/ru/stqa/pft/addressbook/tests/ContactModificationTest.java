@@ -49,7 +49,7 @@ public class ContactModificationTest extends TestBase{
     Contacts before = app.contact().all();
     ContactData modifiedContact = before.iterator().next();
     ContactData contact = new ContactData().withId(modifiedContact.getId())
-            .withFirstName("firstName")
+            .withFirstName("EEEfirstName")
             .withMiddleName("MiddleName")
             .withLastName("LastName")
             .withNickname("nickname")

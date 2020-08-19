@@ -106,8 +106,7 @@ public class ContactHelper extends HelperBase{
   }
 
   public void modify(ContactData contact) {
-    selectContactById(contact.getId());
-    initContactModification();
+    initContactModificationById(contact.getId());
     fillContactForm(false, contact);
     submitContactModification();
     contactCache = null;
@@ -164,7 +163,7 @@ public class ContactHelper extends HelperBase{
       String allPhones = row.get(5).getText();
       String allEmails = row.get(4).getText();
       String address = row.get(3).getText();
-      int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+      int id = Integer.parseInt(element.findElement(By.xpath(".//input")).getAttribute("value"));
       ContactData contact = new ContactData().withId(id).withFirstName(firstName).withLastName(lastName)
               .withAllPhones(allPhones).withAllEmails(allEmails).withAddress(address);
       contactCache.add(contact);
