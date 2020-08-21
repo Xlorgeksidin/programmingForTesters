@@ -22,25 +22,25 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">8</div>
+<div class="counter">13</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">8</div>
 <p>failures</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="ignored">
-<div class="counter">0</div>
+<div class="counter">5</div>
 <p>ignored</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">21.488s</div>
+<div class="counter">2.864s</div>
 <p>duration</p>
 </div>
 </td>
@@ -49,8 +49,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -60,10 +60,78 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Classes</a>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Ignored tests</a>
+</li>
+<li>
+<a href="#tab2">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<ul class="linkList">
+<li>
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactAddressTests.html">ContactAddressTests</a>.
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactAddressTests.html#ensurePreconditions">ensurePreconditions</a>
+</li>
+<li>
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactCreationTest.html">ContactCreationTest</a>.
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactCreationTest.html#testContactCreation[0](ContactData{id=0, firstName='firstName 0', lastName='LastName 0'})">testContactCreation[0](ContactData{id=0, firstName='firstName 0', lastName='LastName 0'})</a>
+</li>
+<li>
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactCreationTest.html">ContactCreationTest</a>.
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactCreationTest.html#testContactCreation[1](ContactData{id=0, firstName='firstName 1', lastName='LastName 1'})">testContactCreation[1](ContactData{id=0, firstName='firstName 1', lastName='LastName 1'})</a>
+</li>
+<li>
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactCreationTest.html">ContactCreationTest</a>.
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactCreationTest.html#testContactCreation[2](ContactData{id=0, firstName='firstName 2', lastName='LastName 2'})">testContactCreation[2](ContactData{id=0, firstName='firstName 2', lastName='LastName 2'})</a>
+</li>
+<li>
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactDeletionTest.html">ContactDeletionTest</a>.
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactDeletionTest.html#ensurePreconditions">ensurePreconditions</a>
+</li>
+<li>
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactEmailTests.html">ContactEmailTests</a>.
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactEmailTests.html#ensurePreconditions">ensurePreconditions</a>
+</li>
+<li>
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactModificationTest.html">ContactModificationTest</a>.
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactModificationTest.html#ensurePreconditions">ensurePreconditions</a>
+</li>
+<li>
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactPhoneTests.html">ContactPhoneTests</a>.
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactPhoneTests.html#ensurePreconditions">ensurePreconditions</a>
+</li>
+</ul>
+</div>
+<div id="tab1" class="tab">
+<h2>Ignored tests</h2>
+<ul class="linkList">
+<li>
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactAddressTests.html">ContactAddressTests</a>.
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactAddressTests.html#testContactAddress">testContactAddress</a>
+</li>
+<li>
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactDeletionTest.html">ContactDeletionTest</a>.
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactDeletionTest.html#testDeletionContact">testDeletionContact</a>
+</li>
+<li>
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactEmailTests.html">ContactEmailTests</a>.
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactEmailTests.html#testContactEmails">testContactEmails</a>
+</li>
+<li>
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactModificationTest.html">ContactModificationTest</a>.
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactModificationTest.html#testContactModification">testContactModification</a>
+</li>
+<li>
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactPhoneTests.html">ContactPhoneTests</a>.
+<a href="../classes/ru.stqa.pft.addressbook.tests.ContactPhoneTests.html#testContactPhones">testContactPhones</a>
+</li>
+</ul>
+</div>
+<div id="tab2" class="tab">
 <h2>Classes</h2>
 <table>
 <thread>
@@ -77,64 +145,64 @@
 </tr>
 </thread>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="../classes/ru.stqa.pft.addressbook.tests.ContactAddressTests.html">ContactAddressTests</a>
 </td>
+<td>2</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0.375s</td>
-<td class="success">100%</td>
+<td>1</td>
+<td>0.006s</td>
+<td class="failures">0%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="../classes/ru.stqa.pft.addressbook.tests.ContactCreationTest.html">ContactCreationTest</a>
 </td>
 <td>3</td>
+<td>3</td>
 <td>0</td>
-<td>0</td>
-<td>15.954s</td>
-<td class="success">100%</td>
+<td>2.822s</td>
+<td class="failures">0%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="../classes/ru.stqa.pft.addressbook.tests.ContactDeletionTest.html">ContactDeletionTest</a>
 </td>
+<td>2</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0.968s</td>
-<td class="success">100%</td>
+<td>1</td>
+<td>0.003s</td>
+<td class="failures">0%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="../classes/ru.stqa.pft.addressbook.tests.ContactEmailTests.html">ContactEmailTests</a>
 </td>
+<td>2</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0.443s</td>
-<td class="success">100%</td>
+<td>1</td>
+<td>0.011s</td>
+<td class="failures">0%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="../classes/ru.stqa.pft.addressbook.tests.ContactModificationTest.html">ContactModificationTest</a>
 </td>
+<td>2</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>3.363s</td>
-<td class="success">100%</td>
+<td>1</td>
+<td>0.007s</td>
+<td class="failures">0%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="../classes/ru.stqa.pft.addressbook.tests.ContactPhoneTests.html">ContactPhoneTests</a>
 </td>
+<td>2</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0.385s</td>
-<td class="success">100%</td>
+<td>1</td>
+<td>0.015s</td>
+<td class="failures">0%</td>
 </tr>
 </table>
 </div>
@@ -146,7 +214,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.5.1</a> at 19.08.2020 18:24:40</p>
+<a href="http://www.gradle.org">Gradle 6.5.1</a> at 21.08.2020 18:26:48</p>
 </div>
 </div>
 </body>

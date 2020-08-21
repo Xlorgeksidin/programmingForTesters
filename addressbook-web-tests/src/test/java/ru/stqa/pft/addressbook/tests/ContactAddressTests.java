@@ -45,7 +45,7 @@ public class ContactAddressTests extends TestBase{
 
   @Test
   public void testContactAddress(){
-    //Дописать тест
+
     app.goTo().homePage();
     ContactData contact = app.contact().all().iterator().next();
     ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
