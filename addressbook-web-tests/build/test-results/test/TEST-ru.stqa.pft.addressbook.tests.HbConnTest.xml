@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.tests.HbConnTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-24T14:31:42" hostname="WS64-127" time="0.422">
+  <properties/>
+  <testcase name="testHbConn" classname="ru.stqa.pft.addressbook.tests.HbConnTest" time="0.422"/>
+  <system-out><![CDATA[18:31:40,132 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+18:31:40,133 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+18:31:40,133 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Users/mkolesnikov/Documents/GitHub/programmingForTesters/addressbook-web-tests/build/resources/test/logback.xml]
+18:31:40,210 |-INFO in ch.qos.logback.core.joran.action.TimestampAction - Using current interpretation time, i.e. now, as time reference.
+18:31:40,212 |-INFO in ch.qos.logback.core.joran.action.TimestampAction - Adding property to the context with key="bySecond" and value="20200824T183140" to the LOCAL scope
+18:31:40,212 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+18:31:40,216 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+18:31:40,224 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+18:31:40,257 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [test-20200824T183140.log]
+18:31:40,260 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+18:31:40,262 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+18:31:40,266 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+18:31:40,268 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+18:31:40,268 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]
+18:31:40,270 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+18:31:40,270 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+18:31:40,271 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@1c0b5e6 - Registering current configuration as safe fallback point
+18:31:40.331 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.20.Final
+18:31:40.886 [Test worker] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:31:41.089 [Test worker] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:31:41.098 [Test worker] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/addressbook?serverTimezone=UTC]
+18:31:41.098 [Test worker] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=root, password=}
+18:31:41.098 [Test worker] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:31:41.103 [Test worker] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 1 (min=1)
+18:31:41.306 [Test worker] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:31:42.361 [Test worker] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@40ce52c4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+18:31:42.413 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: select groupdata0_.group_id as group_id1_0_, groupdata0_.group_footer as group_fo2_0_, groupdata0_.group_header as group_he3_0_, groupdata0_.group_name as group_na4_0_ from group_list groupdata0_
+GroupData{id='16', name='test1'}
+GroupData{id='20', name='edit1'}
+GroupData{id='59', name='test1'}
+GroupData{id='61', name='testGroup 2'}
+GroupData{id='62', name='EEEtest1'}
+GroupData{id='64', name='testGroup 2'}
+GroupData{id='65', name='testGroup 0'}
+GroupData{id='66', name='testGroup 1'}
+GroupData{id='67', name='testGroup 2'}
+GroupData{id='68', name='testGroup 0'}
+GroupData{id='69', name='testGroup 1'}
+GroupData{id='70', name='testGroup 2'}
+GroupData{id='71', name='EEEtest1'}
+GroupData{id='73', name='testGroup 2'}
+GroupData{id='74', name='testGroup 0'}
+GroupData{id='75', name='testGroup 1'}
+GroupData{id='76', name='testGroup 2'}
+GroupData{id='77', name='testGroup 0'}
+GroupData{id='78', name='testGroup 1'}
+GroupData{id='79', name='testGroup 2'}
+GroupData{id='80', name='testGroup 0'}
+GroupData{id='81', name='testGroup 1'}
+GroupData{id='82', name='testGroup 2'}
+GroupData{id='83', name='testGroup 0'}
+GroupData{id='84', name='testGroup 1'}
+GroupData{id='85', name='testGroup 2'}
+GroupData{id='86', name='testGroup 0'}
+GroupData{id='87', name='testGroup 1'}
+GroupData{id='88', name='testGroup 2'}
+GroupData{id='89', name='testGroup 0'}
+GroupData{id='90', name='testGroup 1'}
+GroupData{id='91', name='testGroup 2'}
+]]></system-out>
+  <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+]]></system-err>
+</testsuite>
